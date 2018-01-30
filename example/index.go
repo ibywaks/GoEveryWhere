@@ -19,7 +19,7 @@ func main() {
 	var visit = VisitEvent{"John Snow"}
 	GoEveryWhere.Register("Visit Event", VisitListener{visit})
 
-	GoEveryWhere.Fire("Visit Event", true)
+	GoEveryWhere.Fire("Visit Event", false)
 
 	fmt.Println("Running some gnarly events!")
 }
